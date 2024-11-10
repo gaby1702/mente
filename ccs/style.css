@@ -1,0 +1,143 @@
+/* Importar tipografía rústica */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+
+/* Estilo general */
+body {
+    font-family: 'Merriweather', serif;
+    color: #23293a;
+    background-color: #302f42;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #756897;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 2px solid #445376;
+}
+
+/* Encabezado con imagen de fondo */
+.header {
+    background-image: url(../img/cerebro5.jpg); /* Cambia esta URL por una textura de madera */
+    background-size: cover;
+    background-position: center;
+    color: #bea6ce;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    border-bottom: 5px solid #28252c;
+    border-radius: 8px 8px 0 0;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px 8px 0 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: bold;
+    color: #f5f1e7;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #eae0c8;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Estilos de las secciones */
+.section {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #e1c0ee;
+    border-left: 6px solid #371d39;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+    font-size: 1.8em;
+    color: #290d4e;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #804390;
+    padding-bottom: 6px;
+}
+
+.section p {
+    color: #4b3d2c;
+    font-size: 1.1em;
+}
+
+.topics-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #080707;
+}
+
+.topics-list li {
+    margin: 10px 0;
+    padding-left: 5px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.topics-list li:hover {
+    color: #853994;
+}
+
+/* Botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    background-color: #46214e;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    font-size: 1.1em;
+}
+
+.cta-button:hover {
+    background-color: #5f1166;
+    transform: translateY(-3px);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #f1ede9;
+    border-top: 2px solid #d8aeeb;
+    margin-top: 20px;
+    background-color: #4d074d;
+}
